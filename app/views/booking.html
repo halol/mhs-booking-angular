@@ -1,0 +1,167 @@
+<main class="booking">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header">
+          <h2>Your Booking</h2>
+          <p><strong>Friday, 24/02/2017</strong>, 9:10, 2 players <a href="#!/" class="btn btn-secondary btn-sm">Cancel booking</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Section for grouped content -->
+        <div class="panel">
+          <div class="panel-heading">
+            <h3>Please select required package</h3>
+          </div>
+
+          <!-- Repeat panel-body (packages loop) -->
+          <div class="panel-body">
+            <div class="flex flex-column flex-row-l">
+              <div class="package">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                    <strong>2-ball £20.00 deposit</strong> 18 holes low deposit
+                  </label>
+                </div>
+              </div>
+              <div class="flex flex-row prices">
+                <div class="price"><span>Due now</span><strong>£20.00</strong></div>
+                <div class="price"><span>Due on arrival</span><strong>£80.00</strong></div>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat panel-body (packages loop) -->
+          <div class="panel-body">
+            <div class="flex flex-column flex-row-l">
+              <div class="package">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                    <strong>2-ball £20.00 deposit</strong> 18 holes low deposit
+                  </label>
+                </div>
+              </div>
+              <div class="flex flex-row prices">
+                <div class="price"><span>Due now</span><strong>£20.00</strong></div>
+                <div class="price"><span>Due on arrival</span><strong>£80.00</strong></div>
+              </div>
+            </div>
+          </div>
+          <!-- This appears when the package is selected -->
+          <div class="panel-footer"><button class="btn btn-primary">Next</button></div>
+        </div>
+        <!-- End of .panel -->
+
+
+        <!-- PLAYERS -->
+
+
+        <!-- Section for grouped content -->
+        <div class="panel" role="players">
+          <div class="panel-heading">
+            <h3>Players (1 of 2)
+            <button class="btn btn-sm btn-info pull-right" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">?</button>
+            </h3>
+          </div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item disabled">
+                Mr Grzegorz Hadala (You, Men's 12)
+                <span class="label label-default">Host</span>
+              </li>
+              <li class="list-group-item">
+                Mr Grzegorz Hadala (You, Men's 12)
+                <span class="label label-default">Guest</span>
+                <button class="btn-sm btn btn-link pull-right">Remove</button>
+              </li>
+            </ul>
+          </div>
+          <!-- Guests -->
+          <div class="panel-body">
+            <h3>Guests (2) <button class="btn btn-default btn-sm pull-right">Add guests</button></h3>
+            <ul class="list-group">
+
+              <li class="list-group-item clearfix">
+                Ms Wan-Lin Tai (Ladies' 12)
+                <p style="margin-bottom:0;" class="pull-right">
+                  <button class="btn-sm btn btn-success">Player</button>
+                  <button class="btn-sm btn btn-link">Remove</button>
+                  <button class="btn-sm btn btn-link">Edit</button>
+                </p>
+              </li>
+              <li class="list-group-item clearfix">
+                Ms Wan-Lin Tai (Ladies' 12)
+                <p style="margin-bottom:0;" class="pull-right">
+                  <button class="btn-sm btn btn-success">Player</button>
+                  <button class="btn-sm btn btn-link">Remove</button>
+                  <button class="btn-sm btn btn-link">Edit</button>
+                </p>
+              </li>
+
+
+            </ul>
+
+            <div class="well">
+              <h5>Add a guest</h5>
+              <strong>Section:</strong>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                  Men's
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                  Ladies'
+                </label>
+              </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label for="form_title">Title</label>
+                <select class="form-control" id="form_title">
+                  <option>Mr.</option>
+                  <option>Mrs.</option>
+                </select>
+              </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label for="form_title">Forename</label>
+                <input type="text" class="form-control" id="form_title" placeholder="Forename">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label for="form_forename">Surname</label>
+                <input type="text" class="form-control" id="form_forename" placeholder="Surname">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label for="form_handicap">Handicap</label>
+                <select class="form-control" id="form_handicap">
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                <span id="helpBlock" class="help-block">Ladies....</span>
+              </div>
+            </div>
+            </div>
+            <button class="btn btn-sm btn-default">Save</button>
+            <button class="btn btn-sm btn-link pull-right">Cancel</button>
+            </div>
+          </div>
+          <!-- This appears when the package is selected -->
+          <div class="panel-footer"><a class="btn btn-primary" href="#£/summary">Summary</a></div>
+        </div>
+        <!-- End of .panel -->
+      </div>
+    </div>
+  </div>
+</main>

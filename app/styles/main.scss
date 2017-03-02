@@ -5,6 +5,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 @import 'overrides/paper/bootswatch';
+@import 'flexbox';
+@import 'widths';
+@import 'booking';
 
 
 body {
@@ -24,7 +27,7 @@ navbar-login-dropdown {
 .card {
   border: 1px solid rgba(black, 0.1);
   padding: 20px;
-  border-radius: 1rem;
+  // border-radius: 1rem;
   background: white;
   box-shadow: 0 5px 10px rgba(black, 0.1);
 }
@@ -76,9 +79,11 @@ footer {
 
 
 .page-header {
-  @media (max-width: $screen-xs-max) {
-    label, h1, h2, h3 {
+  border-bottom: none;
+  @media (max-width: $screen-sm-max) {
+    h2 > label {
       display: block;
+      width: 100%;
     }
   }
 }
@@ -88,4 +93,44 @@ footer {
     max-height: 100%;
     width: auto;
   }
+}
+
+.results-grid {
+  margin: 0 -$grid-gutter-width/4;
+  .item {
+    padding: 0 $grid-gutter-width/4;
+
+    .panel {
+      .panel-heading > h4 {
+        font-weight: 600;
+      }
+      transition: All 0.25s ease;
+      &:hover {
+        @include box-shadow(0 7px 15px rgba(black, 0.3));
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+    width: 50%;
+    }
+  }
+}
+
+.panel {
+  &.panel-success {
+    .panel-heading {
+      color: white;
+      h4 {
+        color: white;
+      }
+    }
+    .panel-footer {
+      background-color: $brand-success;
+      color: white;
+    }
+
+  }
+  .panel-body + .panel-body {
+    border-top: 1px solid $gray-lighter;
+  }
+  //
 }

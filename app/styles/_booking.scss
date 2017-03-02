@@ -1,0 +1,18 @@
+.prices {
+  .price {
+    margin-left: 27px;
+    span, strong {
+      display: block;
+      // width: 100%;
+    }
+  }
+}
+
+// override
+.list-group-item {
+  .pull-right {
+    @media (max-width: $screen-sm-max) {
+      float: left;
+    }
+  }
+}
