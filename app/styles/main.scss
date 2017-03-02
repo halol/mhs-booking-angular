@@ -132,5 +132,13 @@ footer {
   .panel-body + .panel-body {
     border-top: 1px solid $gray-lighter;
   }
-  //
+
+}
+
+
+sup {
+  color: $brand-danger;
+}
+.center {
+  margin: 0 auto;
 }

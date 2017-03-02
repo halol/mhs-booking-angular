@@ -69,6 +69,16 @@ angular
         controller: 'MyaccountCtrl',
         controllerAs: 'myaccount'
       })
+      .when('/members', {
+        templateUrl: 'views/members.html',
+        controller: 'MembersCtrl',
+        controllerAs: 'members'
+      })
+      .when('/auth', {
+        templateUrl: 'views/auth.html',
+        controller: 'AuthCtrl',
+        controllerAs: 'auth'
+      })
       .otherwise({
         redirectTo: '/'
       });
