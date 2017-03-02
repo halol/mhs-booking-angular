@@ -149,3 +149,11 @@ sup {
 .center {
   margin: 0 auto;
 }
+
+
+input:required:invalid {
+  border-bottom-color: $brand-danger;
+}
+input:required:valid {
+  border-bottom-color: $brand-success;
+}

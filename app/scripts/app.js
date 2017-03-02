@@ -84,6 +84,11 @@ angular
         controller: 'SignupDetailsCtrl',
         controllerAs: 'signup/details'
       })
+      .when('/mybookings', {
+        templateUrl: 'views/mybookings.html',
+        controller: 'MybookingsCtrl',
+        controllerAs: 'mybookings'
+      })
       .otherwise({
         redirectTo: '/'
       });

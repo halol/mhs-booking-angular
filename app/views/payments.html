@@ -1,1 +1,81 @@
-<p>This is the payments view.</p>
+<main class="payments">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+        <div class="page-header">
+          <h2>Payment for </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+        <!-- Section for grouped content -->
+        <div class="panel">
+          <div class="panel-body">
+            <h3><strong>Friday, 24/02/2017</strong>, <time>9:10</time>, Old Course</h3>
+            <p class="lead text-success">Due now: <strong>£20.00</strong></p>
+            <p>Due on arrival: <strong>£80.00</strong></p>
+          </div>
+
+
+
+          <div class="panel-body">
+            <div class="well">
+              <form action="" class="form">
+            <div class="row">
+              <div class="col-lg-7 col-md-7">
+                <div class="form-group">
+                  <label for="">Card number <sup>*</sup></label>
+                  <input type="number" class="form-control" required="required" autofocus>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-5">
+                <div class="form-group">
+                  <label for="">Card type <sup>*</sup></label>
+                  <input type="text" list="vendors" class="form-control">
+                  <datalist id="vendors">
+                    <option value="Visa">
+                    <option value="Mastercard">
+                    <option value="American Express">
+                </datalist>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Name on a card <sup>*</sup></label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="form-group">
+                  <label for="">Expiry <sup>*</sup></label>
+                  <input type="number" class="form-control" placeholder="MM" maxlength="2" required>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="form-group">
+                  <label for="">&nbsp;</label>
+                  <input type="number" class="form-control" placeholder="YYYY" maxlength="4" required>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="form-group">
+                  <label for="">Security Code <sup>*</sup></label>
+                  <input type="number" class="form-control" placeholder="CVC" maxlength="3" required>
+                </div>
+              </div>
+            </div>
+            </form>
+          </div>
+          </div>
+          <div class="panel-footer">
+            <!-- <button type="submit" class="btn btn-success btn-block">Pay £20</button> -->
+            <a href="#!/confirmation" class="btn btn-success btn-block">Pay £20</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</main>
