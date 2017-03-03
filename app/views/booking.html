@@ -4,7 +4,6 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
         <div class="page-header">
           <h2>Your Booking <a href="#!/" class="btn btn-secondary btn-sm pull-right">Cancel</a></h2>
-
         </div>
       </div>
     </div>
@@ -52,7 +51,7 @@
             </div>
           </div>
           <!-- This appears when the package is selected -->
-          <div class="panel-footer"><button class="btn btn-primary">Next</button></div>
+          <div class="panel-footer"><button class="btn btn-info">Next</button></div>
         </div>
         <!-- End of .panel -->
 
@@ -132,8 +131,8 @@
               </div>
             </div>
             </div>
-            <button class="btn btn-sm btn-default">Save</button>
-            <button class="btn btn-sm btn-link pull-right">Cancel</button>
+            <button class="btn btn-sm btn-default" ng-click="showGuestForm = !showGuestForm">Save</button>
+            <button class="btn btn-sm btn-link pull-right" ng-click="showGuestForm = !showGuestForm">Cancel</button>
             </div>
             <ul class="list-group">
 
@@ -160,7 +159,7 @@
 
           </div>
           <!-- This appears when the package is selected -->
-          <div class="panel-footer"><a class="btn btn-primary" href="#!/summary">Summary</a></div>
+          <div class="panel-footer"><a class="btn btn-info" href="#!/summary">Summary</a></div>
         </div>
         <!-- End of .panel -->
       </div>

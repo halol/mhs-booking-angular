@@ -20,4 +20,7 @@ angular.module('mhsAngularApp')
         return true;
       }
     }
+    $scope.isActive = function (viewLocation) {
+        return viewLocation === $location.path();
+    };
   });

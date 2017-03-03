@@ -32,12 +32,11 @@
               <div class="col-lg-5 col-md-5">
                 <div class="form-group">
                   <label for="">Card type <sup>*</sup></label>
-                  <input type="text" list="vendors" class="form-control">
-                  <datalist id="vendors">
-                    <option value="Visa">
-                    <option value="Mastercard">
-                    <option value="American Express">
-                </datalist>
+                  <select name="vendor" id="vendor" class="form-control">
+                    <option value="">Visa</option>
+                    <option value="">Visa</option>
+                    <option value="">Visa</option>
+                  </select>
                 </div>
               </div>
             </div>
@@ -70,7 +69,7 @@
           </div>
           <div class="panel-footer">
             <!-- <button type="submit" class="btn btn-success btn-block">Pay £20</button> -->
-            <a href="#!/confirmation" class="btn btn-success btn-block">Pay £20</a>
+            <a href="#!/confirmation" class="btn btn-success btn-block">Pay <strong>£20</strong></a>
           </div>
         </div>
 

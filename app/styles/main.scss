@@ -1,4 +1,11 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700');
+$brand-primary: #4B4B49 !default;
+// $brand-success: #A1E49C !default;
+// $brand-info: #7BA2EB !default;
+// $brand-warning: #FFCF83 !default;
+// $brand-danger: #F08176 !default;
+
 @import 'overrides/paper/variables';
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
@@ -24,6 +31,9 @@ navbar-login-dropdown {
   }
 }
 
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}
 .card {
   border: 1px solid rgba(black, 0.1);
   padding: 20px;
@@ -64,10 +74,11 @@ main {
       padding-bottom: 30px;
     }
   }
-
-
 }
 
+.lead {
+  margin-bottom: 0;
+}
 label {
   font-weight: bold;
 }
@@ -138,6 +149,10 @@ footer {
   }
   .panel-body + .panel-body {
     border-top: 1px solid $gray-lighter;
+  }
+  .panel-body + .panel-heading,
+  .panel-heading + .panel-heading {
+    border-top: 2px solid $gray-lighter;
   }
 
 }

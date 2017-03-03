@@ -8,17 +8,94 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-3 col-md-3">
+        <aside>
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#"><i class="fa fa-id-card"></i> Your details</a></li>
+            <li><a href="#"><i class="fa fa-group"></i> Guests</a></li>
+            <li><a href="#!/mybookings"><i class="fa fa-history"></i> Bookings</a></li>
+            <li><a href="#"><i class="fa fa-credit-card"></i> Payments</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="col-lg-9 col-md-9">
         <div class="panel">
           <div class="panel-body">
+            <h4 class="text-muted">Personal details</h4>
             <div class="row">
-              <div class="col-lg-6 col-md-6">
-                <h4>Personal details</h4>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <strong>Section:</strong>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Men's
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                    Ladies'
+                  </label>
+                </div>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <h4>Account settings</h4>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label for="form_title">Title <sup>*</sup></label>
+                <select class="form-control" id="form_title">
+                  <option>Mr.</option>
+                  <option>Mrs.</option>
+                </select>
+              </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label for="form_title">Forename <sup>*</sup></label>
+                <input type="text" class="form-control" id="form_title" placeholder="Forename">
               </div>
             </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label for="form_forename">Surname <sup>*</sup></label>
+                <input type="text" class="form-control" id="form_forename" placeholder="Surname">
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <h4 class="text-muted">Contact information</h4>
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <label for="form_phone1">Tel <sup>*</sup></label>
+                  <input type="phone" class="form-control" id="form_phone1" placeholder="Phone">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <label for="form_phone2">Mobile</label>
+                  <input type="phone" class="form-control" id="form_phone2" placeholder="Phone">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <label for="form_phone3">Phone 3</label>
+                  <input type="text" class="form-control" id="form_phone3" placeholder="Phone">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <label for="form_email">Email <sup>*</sup></label>
+                  <input type="email" class="form-control" id="form_email" placeholder="Email" value="greg@ucreate.it">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="panel-body">
+            <h4 class="text-muted">Account settings</h4>
           </div>
           <div class="panel-footer"><a href="#!/booking" class="btn btn-default">Save changes</a></div>
         </div>

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
 <div class="container">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -13,20 +13,20 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="navbar">
 
-<a href="#" class="btn btn-primary navbar-btn"><strong>New booking</strong></a>
+<a href="#" class="btn btn-default navbar-btn"><strong><i class="fa fa-search"></i> Search</strong></a>
 <ul class="nav navbar-nav navbar-right">
 <!-- <li class="active"> -->
 
 <!-- <li>Welcome, Mr Grzegorz Hadala</li> -->
 <li class="dropdown">
-  <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+  <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome, <strong>Mr Grzegorz Hadala!</strong> <span class="caret"></span></a>
   <ul class="dropdown-menu">
-    <li><a href="#">Your details</a></li>
-    <li><a href="#">Guests</a></li>
-    <li><a href="#!/mybookings">Bookings</a></li>
-    <li><a href="#">Payments</a></li>
+    <li ng-class="{ active: isActive('/myaccount')}"><a href="#!/myaccount"><i class="fa fa-id-card"></i> Your details</a></li>
+    <li ng-class="{ active: isActive('/myguests')}"><a href="#"><i class="fa fa-group"></i> Guests</a></li>
+    <li ng-class="{ active: isActive('/mybookings')}"><a href="#!/mybookings"><i class="fa fa-history"></i> Bookings</a></li>
+    <li ng-class="{ active: isActive('/mypayments')}"><a href="#"><i class="fa fa-credit-card"></i> Payments</a></li>
     <li role="separator" class="divider"></li>
-    <li><a href="#">Logout</a></li>
+    <li><a href="#!/login"><i class="fa fa-power-off"></i> Logout</a></li>
   </ul>
 </li>
 </ul>

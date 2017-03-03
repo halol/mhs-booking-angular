@@ -89,6 +89,11 @@ angular
         controller: 'MybookingsCtrl',
         controllerAs: 'mybookings'
       })
+      .when('/forgotpassword', {
+        templateUrl: 'views/forgotpassword.html',
+        controller: 'ForgotpasswordCtrl',
+        controllerAs: 'forgotpassword'
+      })
       .otherwise({
         redirectTo: '/'
       });
