@@ -21,14 +21,9 @@
     <![endif]-->
 
     <div ng-controller="NavCtrl">
-
       <div ng-include="'views/common/nav.html'" ng-hide="showUserNav()"></div>
       <div ng-include="'views/common/nav_user.html'" ng-show="showUserNav()"></div>
     </div>
-
-
-
-
     <div ng-view=""></div>
 
 
