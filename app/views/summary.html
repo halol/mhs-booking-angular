@@ -2,55 +2,49 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
-        <div class="page-header">
-          <h2>Booking Summary <a href="#!/" class="btn btn-secondary btn-sm pull-right">Cancel</a></h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
         <!-- Section for grouped content -->
         <div class="panel">
-          <div class="panel-body">
-            <h3><strong>Friday, 24/02/2017</strong>, <time>9:10</time>, Old Course</h3>
+          <div class="panel-summary">
+            <h3><time>Friday, 24th Feb 2017</time></h3>
+            <p class="lead">2 players, Old course</p>
+          </div>
+          <div class="panel-steps">
+            <ol class="breadcrumb">
+              <li>Package</li>
+              <li>Players</li>
+              <li class="active">Summary</li>
+              <li>Payments</li>
+              <li>Confirmation</li>
+            </ol>
           </div>
 
 
           <!-- Repeat panel-body (packages loop) -->
           <div class="panel-body">
             <h4>Package</h4>
-            <div class="flex flex-column flex-row-l">
-              <div class="package">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                    <strong>2-ball £20.00 deposit</strong> 18 holes low deposit
-                  </label>
-                </div>
-              </div>
-              <div class="flex flex-row prices">
-                <div class="price"><span>Due now</span><strong>£20.00</strong></div>
-                <div class="price"><span>Due on arrival</span><strong>£80.00</strong></div>
-              </div>
-            </div>
+            <p class="help">Description if needed</p>
           </div>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>2 ball, £20.00 deposit</strong> 18 holes low deposit</li>
+          </ul>
           <div class="panel-body">
             <h4>Players (2 of 2)</h4>
-            <ul class="list-group">
-              <li class="list-group-item">
-                Mr Grzegorz Hadala (You, Men's 12)
-                <span class="label label-default">Host</span>
-              </li>
-              <li class="list-group-item">
-                Mr Tom Ray (You, Men's 12)
-                <span class="label label-default">Guest</span>
-
-              </li>
-            </ul>
+            <p class="help"><i class="fa fa-info"></i> Helper text</p>
           </div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              Mr Grzegorz Hadala (You, Men's 12)
+              <span class="label label-default">Host</span>
+            </li>
+            <li class="list-group-item">
+              Mr Tom Ray (You, Men's 12)
+              <span class="label label-default">Guest</span>
+
+            </li>
+          </ul>
 
           <div class="panel-footer">
-            <a href="#!/booking" class="btn btn-link">Edit details</a>
+            <a href="#!/players" class="btn btn-link">Edit players</a>
             <a href="#!/payments" class="btn btn-success pull-right">Confirm <span class="hidden-xs">booking </span>&amp; Pay</a>
           </div>
         </div>

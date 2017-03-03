@@ -2,17 +2,14 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
-
-        <div class="page-header">
-          <h2>Players <a href="#!/" class="btn btn-secondary btn-sm pull-right">Cancel</a></h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
         <!-- Section for grouped content -->
+        <!-- <button class="btn btn-link">Cancel booking</button> -->
         <div class="panel">
-          <div class="panel-heading panel-steps">
+          <div class="panel-summary">
+            <h3><time>Friday, 24th Feb 2017</time></h3>
+            <p class="lead">2 players, Old course</p>
+          </div>
+          <div class="panel-steps">
             <ol class="breadcrumb">
               <li>Package</li>
               <li class="active">Players</li>
@@ -22,29 +19,26 @@
             </ol>
           </div>
           <div class="panel-body">
-            <h3><strong>Friday, 24/02/2017</strong>, <time>2 players</time>, Old Course</h3>
+            <h4>Players ({{playersList.length+1}} of 2)</h4>
           </div>
-          <div class="panel-heading">
-            <h3>Players (1 of 2)
-            <button class="btn btn-sm btn-info pull-right" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">?</button>
-            </h3>
-          </div>
-          <div class="panel-body">
+
             <ul class="list-group">
-              <li class="list-group-item disabled">
-                Mr Grzegorz Hadala (You, Men's 12)
-                <span class="label label-default">Host</span>
-              </li>
               <li class="list-group-item">
-                Mr Tom Ray (You, Men's 12)
-                <span class="label label-default">Guest</span>
-                <button class="btn-sm btn btn-link pull-right">Remove</button>
+                <strong>Mr Grzegorz Hadala</strong> (You, Men's 12)
+                <span class="label label-warning">Host</span>
+              </li>
+              <li class="list-group-item" ng-repeat="player in playersList" ng-hide="players.length == 0">
+                <strong>{{player.title}} {{player.forename}} {{player.surname}}</strong> ({{player.section}} {{player.handicap}})
+                <span class="label label-default" ng-show="player.guest">Guest</span>
+                <p style="margin-bottom:0;" class="pull-right">
+                  <button class="btn-sm btn btn-link" ng-click="removePlayer(player)">Remove</button>
+                </p>
               </li>
             </ul>
-          </div>
+
           <!-- Guests -->
           <div class="panel-body">
-            <h3>Guests (2) <button class="btn btn-default btn-sm pull-right" ng-click="showGuestForm = !showGuestForm">Add guests</button></h3>
+            <h4>Guests ({{guests.length}}) <button class="btn btn-default btn-sm pull-right" ng-click="showGuestForm = !showGuestForm">Add guests</button></h4>
             <div class="well" role="guest-form" ng-show="showGuestForm">
               <h5>Add a guest</h5>
               <strong>Section:</strong>
@@ -97,34 +91,25 @@
             <button class="btn btn-sm btn-default" ng-click="showGuestForm = !showGuestForm">Save</button>
             <button class="btn btn-sm btn-link pull-right" ng-click="showGuestForm = !showGuestForm">Cancel</button>
             </div>
-            <ul class="list-group">
-
-              <li class="list-group-item clearfix">
-                Ms Wan-Lin Tai (Ladies' 12)
-                <p style="margin-bottom:0;" class="pull-right">
-                  <button class="btn-sm btn btn-success">Player</button>
-                  <button class="btn-sm btn btn-link">Remove</button>
-                  <button class="btn-sm btn btn-link">Edit</button>
-                </p>
-              </li>
-              <li class="list-group-item clearfix">
-                Ms Wan-Lin Tai (Ladies' 12)
-                <p style="margin-bottom:0;" class="pull-right">
-                  <button class="btn-sm btn btn-success">Player</button>
-                  <button class="btn-sm btn btn-link">Remove</button>
-                  <button class="btn-sm btn btn-link">Edit</button>
-                </p>
-              </li>
-
-
-            </ul>
-
+          </div>
+          <div class="list-group guests-list">
+            <button class="list-group-item clearfix" ng-repeat="guest in guests" ng-click="funAddPlayer(guest)" ng-class="{disabled: (playersList.length+1) == 2}">
+              <strong>{{guest.title}} {{guest.forename}} {{guest.surname}}</strong> ({{guest.section}} {{guest.handicap}})
+              <p style="margin-bottom:0;" class="pull-right">
+                <!-- <button class="btn-sm btn btn-link" ng-hide="(playersList.length+1) == 2">Player</button> -->
+                Add as a player
+              </p>
+            </button>
+            <div ng-hide="isloaded" class="list-group-item text-center text-info" style="padding: 30px 0;">
+              <i class="fa fa-circle-o-notch fa-spin fa-2x fa-fw"></i>
+              <span class="sr-only">Loading...</span>
+            </div>
 
           </div>
           <!-- This appears when the package is selected -->
           <div class="panel-footer">
-            <a class="btn btn-link" href="#!/booking"><i class="fa fa-chevron-left"></i> Package</a>
-            <a class="btn btn-info pull-right" href="#!/summary">Summary <i class="fa fa-chevron-right"></i></a>
+            <a class="btn btn-link" href="#!/booking">Change package</a>
+            <a class="btn btn-info pull-right" href="#!/summary" ng-show="(playersList.length)+1 == 2">Summary </a>
           </div>
         </div>
         <!-- End of .panel -->

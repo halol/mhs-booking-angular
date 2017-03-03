@@ -99,14 +99,22 @@ angular
         controller: 'PlayersCtrl',
         controllerAs: 'players'
       })
+      .when('/my/details', {
+        templateUrl: 'views/my/details.html',
+        controller: 'MyDetailsCtrl',
+        controllerAs: 'my/details'
+      })
+      .when('/my/bookings', {
+        templateUrl: 'views/my/bookings.html',
+        controller: 'MyBookingsCtrl',
+        controllerAs: 'my/bookings'
+      })
+      .when('/my/guests', {
+        templateUrl: 'views/my/guests.html',
+        controller: 'MyGuestsCtrl',
+        controllerAs: 'my/guests'
+      })
       .otherwise({
         redirectTo: '/'
       });
-  });
-  $(function () {
-
-    $('.panel').click(function(e) {
-      console.log("click");
-    });
-
   });

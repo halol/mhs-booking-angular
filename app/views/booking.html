@@ -2,32 +2,26 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
-
-        <div class="page-header">
-          <h2>Package <a href="#!/" class="btn btn-secondary btn-sm pull-right">Cancel</a></h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
         <!-- Section for grouped content -->
+        <!-- <button class="btn btn-link">Cancel booking</button> -->
         <div class="panel">
-          <div class="panel-heading panel-steps">
+          <div class="panel-summary">
+            <h3><time>Friday, 24th Feb 2017</time></h3>
+            <p class="lead">2 players, Old course</p>
+          </div>
+          <div class="panel-steps">
             <ol class="breadcrumb">
-              <li class="active">Your booking</li>
+              <li class="active">Package</li>
               <li>Players</li>
               <li>Summary</li>
               <li>Payments</li>
               <li>Confirmation</li>
             </ol>
           </div>
-          <div class="panel-body">
-            <h3><strong>Friday, 24/02/2017</strong>, <time>2 players</time>, Old Course</h3>
-          </div>
 
           <!-- Repeat panel-body (packages loop) -->
           <div class="panel-body">
-              <h3>Please select required package</h3>
+            <h4>Please select required package</h4>
             <div class="flex flex-column flex-row-l">
               <div class="package">
                 <div class="radio">
@@ -61,9 +55,10 @@
             </div>
           </div>
           <!-- This appears when the package is selected -->
-          <div class="panel-footer clearfix" ng-show="packageSelected"><a href="#!/players" class="btn btn-info pull-right">Players <i class="fa fa-chevron-right"></i></a></div>
+          <div class="panel-footer clearfix" ng-show="packageSelected"><a href="#!/players" class="btn btn-info pull-right">Add Players</a></div>
         </div>
         <!-- End of .panel -->
+
       </div>
     </div>
   </div>
