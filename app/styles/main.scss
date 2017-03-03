@@ -45,13 +45,14 @@ h1, h2, h3 {
   .panel-body {
     padding: 4rem;
     @media (max-width: $screen-sm-max) {
-      
+
       [class*=col-] {
         margin-bottom: 2rem;
       }
     }
   }
 }
+
 .home-search {
   background-color: #444;
   background-image: url(../images/bg_1280.jpg);
@@ -147,15 +148,18 @@ footer {
 }
 
 .panel {
+  .panel-heading > h4 > time {
+    color: $headings-color;
+  }
   &.panel-success {
     .panel-heading {
       color: white;
-      h4 {
+      h4 > time {
         color: white;
       }
     }
     .panel-footer {
-      background-color: $brand-success;
+      background-color: darken($brand-success, 5%);
       color: white;
     }
 

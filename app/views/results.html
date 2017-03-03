@@ -16,7 +16,7 @@
           </div>
           <div class="panel-body">
             <div class="flex flex-row flex-wrap items-stretch justify-left results-grid">
-              <div class="item" ng-repeat="tee in results | orderBy: 'time'">
+              <div class="item" ng-repeat="tee in resultsList">
                 <div class="panel" ng-click="clickOnPanel($event)">
                   <div class="panel-heading"><h4><time>{{tee.time}}</time></h4></div>
                   <div class="panel-footer">{{tee.type}}</div>
