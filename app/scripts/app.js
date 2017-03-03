@@ -94,6 +94,11 @@ angular
         controller: 'ForgotpasswordCtrl',
         controllerAs: 'forgotpassword'
       })
+      .when('/players', {
+        templateUrl: 'views/players.html',
+        controller: 'PlayersCtrl',
+        controllerAs: 'players'
+      })
       .otherwise({
         redirectTo: '/'
       });

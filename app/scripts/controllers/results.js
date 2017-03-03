@@ -24,4 +24,15 @@ angular.module('mhsAngularApp')
     }, function() {
        alert("error");
     });
+
+    $scope.filterTime = function(time) {
+      var temp = time.split(':');
+      var minutes = temp[1];
+      var hours = function() {
+        if(temp[0].length == 1) {
+          return '0'+temp[0];
+        }
+      }
+      return hours + ':' + temp[1];
+    }
   });

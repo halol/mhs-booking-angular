@@ -16,7 +16,7 @@
           </div>
           <div class="panel-body">
             <div class="flex flex-row flex-wrap items-stretch justify-left results-grid">
-              <div class="item" ng-repeat="tee in results">
+              <div class="item" ng-repeat="tee in results | orderBy: 'time'">
                 <div class="panel" ng-click="clickOnPanel($event)">
                   <div class="panel-heading"><h4><time>{{tee.time}}</time></h4></div>
                   <div class="panel-footer">{{tee.type}}</div>
@@ -31,7 +31,7 @@
           <div class="panel-footer clearfix">
             <div class="btn-group" role="group" aria-label="...">
               <button type="button" class="btn btn-primary" disabled>February</button>
-              <button type="button" class="btn btn-default">March</button>
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Next month">March</button>
               <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
             </div>
             <a href="#!/auth" class="btn btn-success pull-right">Book selected</a>

@@ -2,8 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+
         <div class="page-header">
-          <h2>Your Booking <a href="#!/" class="btn btn-secondary btn-sm pull-right">Cancel</a></h2>
+          <h2>Package <a href="#!/" class="btn btn-secondary btn-sm pull-right">Cancel</a></h2>
         </div>
       </div>
     </div>
@@ -11,8 +12,17 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
         <!-- Section for grouped content -->
         <div class="panel">
+          <div class="panel-heading panel-steps">
+            <ol class="breadcrumb">
+              <li class="active">Your booking</li>
+              <li>Players</li>
+              <li>Summary</li>
+              <li>Payments</li>
+              <li>Confirmation</li>
+            </ol>
+          </div>
           <div class="panel-body">
-            <h3><strong>Friday, 24/02/2017</strong>, <time>9:10</time>, Old Course</h3>
+            <h3><strong>Friday, 24/02/2017</strong>, <time>2 players</time>, Old Course</h3>
           </div>
 
           <!-- Repeat panel-body (packages loop) -->
@@ -51,115 +61,7 @@
             </div>
           </div>
           <!-- This appears when the package is selected -->
-          <div class="panel-footer"><button class="btn btn-info">Next</button></div>
-        </div>
-        <!-- End of .panel -->
-
-
-        <!-- PLAYERS -->
-
-
-        <!-- Section for grouped content -->
-        <div class="panel" role="players">
-          <div class="panel-heading">
-            <h3>Players (1 of 2)
-            <button class="btn btn-sm btn-info pull-right" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">?</button>
-            </h3>
-          </div>
-          <div class="panel-body">
-            <ul class="list-group">
-              <li class="list-group-item disabled">
-                Mr Grzegorz Hadala (You, Men's 12)
-                <span class="label label-default">Host</span>
-              </li>
-              <li class="list-group-item">
-                Mr Tom Ray (You, Men's 12)
-                <span class="label label-default">Guest</span>
-                <button class="btn-sm btn btn-link pull-right">Remove</button>
-              </li>
-            </ul>
-          </div>
-          <!-- Guests -->
-          <div class="panel-body">
-            <h3>Guests (2) <button class="btn btn-default btn-sm pull-right" ng-click="showGuestForm = !showGuestForm">Add guests</button></h3>
-            <div class="well" role="guest-form" ng-show="showGuestForm">
-              <h5>Add a guest</h5>
-              <strong>Section:</strong>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                  Men's
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                  Ladies'
-                </label>
-              </div>
-            <div class="row">
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="form-group">
-                <label for="form_title">Title</label>
-                <select class="form-control" id="form_title">
-                  <option>Mr.</option>
-                  <option>Mrs.</option>
-                </select>
-              </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="form-group">
-                <label for="form_title">Forename</label>
-                <input type="text" class="form-control" id="form_title" placeholder="Forename">
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="form-group">
-                <label for="form_forename">Surname</label>
-                <input type="text" class="form-control" id="form_forename" placeholder="Surname">
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="form-group">
-                <label for="form_handicap">Handicap</label>
-                <select class="form-control" id="form_handicap">
-                  <option>10</option>
-                  <option>11</option>
-                  <option>12</option>
-                </select>
-                <span id="helpBlock" class="help-block">Ladies....</span>
-              </div>
-            </div>
-            </div>
-            <button class="btn btn-sm btn-default" ng-click="showGuestForm = !showGuestForm">Save</button>
-            <button class="btn btn-sm btn-link pull-right" ng-click="showGuestForm = !showGuestForm">Cancel</button>
-            </div>
-            <ul class="list-group">
-
-              <li class="list-group-item clearfix">
-                Ms Wan-Lin Tai (Ladies' 12)
-                <p style="margin-bottom:0;" class="pull-right">
-                  <button class="btn-sm btn btn-success">Player</button>
-                  <button class="btn-sm btn btn-link">Remove</button>
-                  <button class="btn-sm btn btn-link">Edit</button>
-                </p>
-              </li>
-              <li class="list-group-item clearfix">
-                Ms Wan-Lin Tai (Ladies' 12)
-                <p style="margin-bottom:0;" class="pull-right">
-                  <button class="btn-sm btn btn-success">Player</button>
-                  <button class="btn-sm btn btn-link">Remove</button>
-                  <button class="btn-sm btn btn-link">Edit</button>
-                </p>
-              </li>
-
-
-            </ul>
-
-
-          </div>
-          <!-- This appears when the package is selected -->
-          <div class="panel-footer"><a class="btn btn-info" href="#!/summary">Summary</a></div>
+          <div class="panel-footer clearfix"><a href="#!/players" class="btn btn-info pull-right">Players <i class="fa fa-chevron-right"></i></a></div>
         </div>
         <!-- End of .panel -->
       </div>
